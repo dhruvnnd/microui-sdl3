@@ -45,3 +45,7 @@ if(NOT SDL3_FOUND)
     )
     FetchContent_MakeAvailable(SDL3)
 endif()
+
+if(MICROUI_SDL3_BUILD_EXAMPLES)
+    add_subdirectory(examples)
+endif()
