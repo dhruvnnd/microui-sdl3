@@ -7,3 +7,12 @@
 - Location: `vendor/microui/microui.c`, `vendor/microui/microui.h`
 - License: MIT, Copyright (c) 2024 rxi
 - Vendored as a plain source copy (not a git submodule), unmodified from upstream.
+
+## SDL3
+
+- Upstream: https://github.com/libsdl-org/SDL
+- Pinned tag: `release-3.4.16`
+- Location: not vendored in-tree — fetched at configure time via CMake
+  `FetchContent` in `CMakeLists.txt` when no system-provided SDL3 is found
+  via `find_package`.
+- License: zlib
